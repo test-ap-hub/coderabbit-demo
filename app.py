@@ -28,9 +28,9 @@ def unused_function():
 def main():
     scores = []
 
-    avg = calculate_average(scores)
-
-    print(avg)
+    if scores:
+        avg = calculate_average(scores)
+        print(avg)
 
     users = [
         {"name": "Alice"},
